@@ -1,3 +1,4 @@
+![Slinkr Icon](screenshots/icon.png)
 # Slinkr 👻
 
 **Tu asistente de batería inteligente para Android.**
