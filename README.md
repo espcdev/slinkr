@@ -1,5 +1,7 @@
-![Slinkr Icon](screenshots/icon.png)
-# Slinkr 👻
+<h1>
+  <img src="screenshots/icon.png" alt="Slinkr Icon" width="40" height="40" style="vertical-align: middle; margin-right: 10px;">
+  Slinkr 👻
+</h1>
 
 **Tu asistente de batería inteligente para Android.**
 
