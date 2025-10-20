@@ -9,6 +9,7 @@ import 'package:percent_indicator/percent_indicator.dart';
 
 import 'settings_screen.dart';
 import 'about_screen.dart';
+import 'war_game_screen.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
@@ -307,6 +308,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         elevation: 0,
         actions: [
           IconButton(
+            icon: const Icon(Icons.casino_outlined),
+            tooltip: 'Juego de Guerra',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const WarGameScreen()),
+              );
+            },
+          ),
+          IconButton(
             icon: const Icon(Icons.settings_outlined),
             onPressed: () async {
               final result = await Navigator.push(
@@ -321,7 +332,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           IconButton(
             icon: const Icon(Icons.info_outline),
             onPressed: () {
-               Navigator.push(
+              Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const AboutScreen()),
               );
